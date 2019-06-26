@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -12,7 +13,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    /**
+     * @brief Construtor da classe
+     *
+     */
     explicit MainWindow(QWidget *parent = nullptr);
+    /**
+     * @brief Destrutor
+     *
+     */
     ~MainWindow();
 
 private:

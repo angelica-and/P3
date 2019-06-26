@@ -19,57 +19,18 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>301</width>
-      <height>101</height>
+      <width>311</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>COR</string>
     </property>
-    <widget class="QSlider" name="horizontalSlider">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>10</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_2">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>40</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_3">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>70</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
+       <x>20</x>
+       <y>30</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -81,8 +42,8 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
+       <x>20</x>
+       <y>60</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -94,8 +55,8 @@
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>80</y>
+       <x>20</x>
+       <y>90</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -104,35 +65,50 @@
       <string>B</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>10</y>
-       <width>64</width>
-       <height>23</height>
+       <x>60</x>
+       <y>20</y>
+       <width>158</width>
+       <height>89</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLCDNumber" name="lcdNumber_2">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>40</y>
-       <width>64</width>
-       <height>23</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLCDNumber" name="lcdNumber_3">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>64</width>
-       <height>23</height>
-      </rect>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_R">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_G">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_B">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
@@ -147,41 +123,37 @@
     <property name="title">
      <string>ESFERA</string>
     </property>
-    <widget class="QSlider" name="horizontalSlider_4">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
+       <x>10</x>
+       <y>33</y>
        <width>47</width>
-       <height>13</height>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
       <string>Raio</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_7">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>20</y>
-       <width>64</width>
-       <height>23</height>
+       <x>60</x>
+       <y>30</y>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_Raio">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
@@ -196,50 +168,11 @@
     <property name="title">
      <string>PLANOS</string>
     </property>
-    <widget class="QSlider" name="horizontalSlider_6">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>30</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_7">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>70</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_8">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>110</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>30</y>
+       <y>40</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -252,7 +185,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>70</y>
+       <y>80</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -266,43 +199,70 @@
       <rect>
        <x>20</x>
        <y>110</y>
-       <width>47</width>
-       <height>13</height>
+       <width>41</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
       <string>Z</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_11">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>70</x>
        <y>30</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_PlanoX">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_12">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>70</x>
        <y>70</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_PlanoY">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_13">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>70</x>
        <y>110</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_PlanoZ">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_4">
@@ -310,57 +270,18 @@
      <rect>
       <x>10</x>
       <y>330</y>
-      <width>301</width>
+      <width>311</width>
       <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>ELIPSE</string>
     </property>
-    <widget class="QSlider" name="horizontalSlider_11">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_12">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>50</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_13">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>80</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>30</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -373,7 +294,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
+       <y>60</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -386,7 +307,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>80</y>
+       <y>90</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -395,35 +316,62 @@
       <string>Raio Z</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_8">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>60</x>
        <y>20</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_Rx">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_9">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>60</x>
        <y>50</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_Ry">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_10">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>60</x>
        <y>80</y>
-       <width>64</width>
-       <height>23</height>
+       <width>156</width>
+       <height>25</height>
       </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QSlider" name="horizontalSlider_Rz">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_5">
@@ -431,57 +379,18 @@
      <rect>
       <x>10</x>
       <y>150</y>
-      <width>301</width>
-      <height>101</height>
+      <width>311</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
      <string>CAIXA</string>
     </property>
-    <widget class="QSlider" name="horizontalSlider_5">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>10</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_9">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>40</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QSlider" name="horizontalSlider_10">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>70</y>
-       <width>160</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>30</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -494,7 +403,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
+       <y>60</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -507,7 +416,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>90</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -516,35 +425,50 @@
       <string>Z</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_4">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>10</y>
-       <width>64</width>
-       <height>23</height>
+       <x>60</x>
+       <y>20</y>
+       <width>158</width>
+       <height>89</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLCDNumber" name="lcdNumber_5">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>40</y>
-       <width>64</width>
-       <height>23</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLCDNumber" name="lcdNumber_6">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>70</y>
-       <width>64</width>
-       <height>23</height>
-      </rect>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_X">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_Y">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QSlider" name="horizontalSlider_Z">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -651,7 +575,7 @@
      <string>Cut Ellipsoid</string>
     </property>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="Plotter" name="widget" native="true">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -668,7 +592,7 @@
      <x>0</x>
      <y>0</y>
      <width>869</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -683,215 +607,14 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Plotter</class>
+   <extends>QWidget</extends>
+   <header>plotter.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
- <connections>
-  <connection>
-   <sender>horizontalSlider</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>139</x>
-     <y>95</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>260</x>
-     <y>95</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_2</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_2</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>200</x>
-     <y>119</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>274</x>
-     <y>118</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_3</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_3</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>203</x>
-     <y>153</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>261</x>
-     <y>153</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_5</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_4</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>126</x>
-     <y>199</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>273</x>
-     <y>211</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_9</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_5</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>201</x>
-     <y>235</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>267</x>
-     <y>234</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_10</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_6</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>175</x>
-     <y>263</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>265</x>
-     <y>263</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_4</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_7</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>177</x>
-     <y>325</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>277</x>
-     <y>328</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_11</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_8</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>178</x>
-     <y>392</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>272</x>
-     <y>396</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_12</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_9</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>201</x>
-     <y>422</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>264</x>
-     <y>422</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_13</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_10</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>196</x>
-     <y>448</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>280</x>
-     <y>448</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_6</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_11</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>202</x>
-     <y>531</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>281</x>
-     <y>527</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_7</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_12</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>186</x>
-     <y>564</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>279</x>
-     <y>563</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_8</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>lcdNumber_13</receiver>
-   <slot>display(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>190</x>
-     <y>600</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>264</x>
-     <y>599</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
