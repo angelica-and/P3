@@ -10,5 +10,7 @@ Layout desenvolvido para implementação das ferramentas requeridas no projeto d
 
 2- Baixar o projeto disponível no github
 
-3- Rodar o programa para visualizar o layout desenvolvido
+3- Abrir o arquivo .pro no QT e selecionar o kit para debug
+
+4- Rodar o programa (Ctrl + R) para visualizar o layout desenvolvido
 
